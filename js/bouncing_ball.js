@@ -1,5 +1,7 @@
-var width = 960,
-    height = 500;
+var width = document.getElementsByClassName('bouncing_ball_container')[0].offsetWidth,
+    height = document.getElementsByClassName('bouncing_ball_container')[0].offsetHeight;
+
+console.log('width: ', width, 'height: ', height);
 
 var svg = d3.select('.bouncing_ball_container').append('svg')
     .attr('width', width)
@@ -50,10 +52,6 @@ function mousemove() {
 }*/
 
 /////
-var margin = {top: 10, right: 10, bottom: 20, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
 var npoints = 100;
 var ptdata = [];
 

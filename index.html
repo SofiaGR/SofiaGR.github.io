@@ -7,6 +7,12 @@
 		<link rel="icon" type="image/x-icon" href="peace_logo.png"/>
 		
 		<style>
+			html, body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		
             .stop-left {
                 stop-color: #41c1c0;
             }
@@ -31,15 +37,26 @@
 			.picasso-mode {
 			  fill: black;
 			}
+			
+			.picasso-span {
+				height: 30px;
+				margin: 2px;
+				font-size: 18px;
+				line-height: 18px;
+			}
+			
+			.bouncing_ball_container {
+				width: 100%;
+				height: calc(99% - 40px);
+			}
         </style>
 	</head>
 	<body>
-		<span class="picasso-span">Feeling like Picasso today?</span>
+		<button type="button" class="picasso-span">Feeling like Picasso today?</button>
 		<div class="bouncing_ball_container">
 		
 		</div>
-
-		<script type="text/javascript" src="js/d3/d3.js"></script>
-		<script type="text/javascript" src="js/bouncing_ball.js"></script>
 	</body>
+	<script type="text/javascript" src="js/d3/d3.js"></script>
+	<script type="text/javascript" src="js/bouncing_ball.js"></script>
 </html>
