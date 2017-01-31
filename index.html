@@ -1,1 +1,45 @@
-hellooooo
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Sofia Rodrigues</title>
+
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/x-icon" href="peace_logo.png"/>
+		
+		<style>
+            .stop-left {
+                stop-color: #41c1c0;
+            }
+
+            .stop-right {
+                stop-color: #009688;
+            }
+
+            .filled {
+                fill: url(#circleGradient);
+            }
+			.line {
+			  stroke: #000;
+			  stroke-width: 1.5px;
+			}
+			
+			.regular-mode {
+			  fill: none;
+			  stroke-dasharray: 2,5;
+			}
+			
+			.picasso-mode {
+			  fill: black;
+			}
+        </style>
+	</head>
+	<body>
+		<span class="picasso-span">Feeling like Picasso today?</span>
+		<div class="bouncing_ball_container">
+		
+		</div>
+
+		<script type="text/javascript" src="js/d3/d3.js"></script>
+		<script type="text/javascript" src="js/bouncing_ball.js"></script>
+	</body>
+</html>
